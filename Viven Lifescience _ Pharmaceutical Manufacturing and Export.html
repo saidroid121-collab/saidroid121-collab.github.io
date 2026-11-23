@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Viven Lifescience | Pharmaceutical Manufacturing and Export</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7FAF9;--ink:#12303F;--mute:#55707D;--teal:#2A8F80;--amber:#D08A2B;--mist:#E3EEEB;--card:#FFFFFF;--on-teal:#FFFFFF;--line:#CFE0DC;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1B25;--ink:#E8F2F0;--mute:#9DB4BE;--teal:#5BC9B3;--amber:#E8A94D;--mist:#122C38;--card:#10262F;--on-teal:#0B1B25;--line:#1F3E4B;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1B25;--ink:#E8F2F0;--mute:#9DB4BE;--teal:#5BC9B3;--amber:#E8A94D;--mist:#122C38;--card:#10262F;--on-teal:#0B1B25;--line:#1F3E4B;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.7 "Jost",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:42px;height:42px;flex:none}
+.wm{display:flex;flex-direction:column;line-height:1}
+.wm b{font:500 24px "Cormorant Garamond",Georgia,serif;letter-spacing:.28em}
+.wm span{font:400 10px "Jost",sans-serif;letter-spacing:.42em;color:var(--teal);margin-top:6px}
+nav{display:flex;gap:26px;font-size:15px;font-weight:400}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding:56px 0 90px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400}
+h1{font-size:clamp(42px,6.4vw,76px);line-height:1.05;margin:0 0 22px;letter-spacing:-.005em}
+.lead{font-size:19px;color:var(--mute);max-width:34em;margin:0 0 32px}
+.btn{display:inline-block;padding:13px 28px;border-radius:999px;background:var(--teal);color:var(--on-teal);font-weight:500;text-decoration:none;border:1.5px solid var(--teal);font-size:16px;cursor:pointer;font-family:inherit}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line);margin-left:10px}
+.helix{width:100%;max-width:360px;justify-self:center}
+.helix .a{fill:var(--teal)}.helix .b{fill:var(--amber)}.helix line{stroke:var(--line);stroke-width:2}
+.helix circle{animation:sway 7s ease-in-out infinite alternate}
+@keyframes sway{to{transform:translateX(var(--d))}}
+section{padding:76px 0}
+.band{background:var(--mist)}
+h2{font-size:clamp(32px,4.4vw,48px);line-height:1.1;margin:0 0 18px}
+.two{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+.two p{margin:0 0 16px;color:var(--mute);max-width:36em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.card h3{font-size:25px;margin:0 0 8px}
+.card p{margin:0;color:var(--mute);font-size:16px}
+.card svg{width:30px;height:30px;stroke:var(--teal);fill:none;stroke-width:1.5;stroke-linecap:round;margin-bottom:14px}
+.regions{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+.regions li{border:1px solid var(--teal);color:var(--ink);border-radius:999px;padding:6px 18px;font-size:15px}
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--teal);padding-top:16px}
+.steps li::before{content:counter(s) ".";font:400 28px "Cormorant Garamond",serif;color:var(--amber)}
+.steps h3{margin:2px 0 6px;font-size:23px}.steps p{margin:0;color:var(--mute);font-size:15px}
+form{display:grid;gap:14px}
+label{font-size:14px;color:var(--mute);display:grid;gap:5px}
+input,select,textarea{font:300 16px "Jost",sans-serif;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);width:100%}
+textarea{min-height:110px;resize:vertical}
+.info dt{font-weight:500;margin-top:16px}.info dd{margin:2px 0 0;color:var(--mute)}
+.note{font-size:13px;color:var(--mute);margin-top:14px}
+footer{padding:30px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer .brand svg{width:30px;height:30px}footer .wm b{font-size:17px}footer .wm span{font-size:8px;margin-top:4px}
+@media (max-width:820px){.hero,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}nav{display:none}.helix{max-width:240px}.btn.alt{margin:12px 0 0}}
+@media (prefers-reduced-motion:reduce){.helix circle{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="logo" viewBox="0 0 48 48">
+<line x1="9" y1="11" x2="24" y2="38" stroke="var(--teal)" stroke-width="9" stroke-linecap="round"/>
+<line x1="39" y1="11" x2="24" y2="38" stroke="var(--amber)" stroke-width="9" stroke-linecap="round" opacity=".92"/>
+<circle cx="24" cy="12" r="3.6" fill="var(--ink)"/>
+</symbol>
+</svg>
+
+<div class="wrap">
+<header>
+<a class="brand" href="#top" aria-label="Viven Lifescience home"><svg role="img" aria-hidden="true"><use href="#logo"/></svg><span class="wm"><b>VIVEN</b><span>LIFESCIENCE</span></span></a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#products">Products</a><a href="#quality">Quality</a><a href="#export">Export</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="top">
+<div class="hero">
+<div>
+<h1>Quality medicines, made in India and delivered worldwide.</h1>
+<p class="lead">Viven Lifescience manufactures and exports pharmaceutical formulations for hospitals, distributors and healthcare partners across the globe.</p>
+<a class="btn" href="#contact">Request a quotation</a><a class="btn alt" href="#products">View our range</a>
+</div>
+<svg class="helix" viewBox="0 0 300 380" role="img" aria-label="Illustration of a DNA double helix"><g id="h"></g></svg>
+</div>
+</main>
+</div>
+
+<section id="about" class="band"><div class="wrap two">
+<h2>A manufacturer you can depend on.</h2>
+<div>
+<p>Viven Lifescience is a pharmaceutical manufacturing and export company. We produce finished formulations under documented, controlled processes and supply them to partners in international markets.</p>
+<p>Our focus is simple: consistent quality, honest timelines and complete export paperwork, so your orders arrive ready for registration, import and use.</p>
+</div>
+</div></section>
+
+<section id="products"><div class="wrap">
+<h2>Our product range</h2>
+<p style="color:var(--mute);max-width:36em;margin:0">Finished dosage forms across major therapeutic categories. Private-label and third-party manufacturing are available.</p>
+<div class="grid">
+<div class="card"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="M5 16h22"/></svg><h3>Tablets</h3><p>Coated and uncoated tablets for antibiotics, analgesics, antidiabetics and more.</p></div>
+<div class="card"><svg viewBox="0 0 32 32"><rect x="4" y="11" width="24" height="10" rx="5"/><path d="M16 11v10"/></svg><h3>Capsules</h3><p>Hard gelatin capsules in standard and custom strengths.</p></div>
+<div class="card"><svg viewBox="0 0 32 32"><path d="M12 4h8M13 4v6l-6 14a3 3 0 0 0 3 4h12a3 3 0 0 0 3-4l-6-14V4"/></svg><h3>Syrups and suspensions</h3><p>Oral liquids and dry syrups for adults and children.</p></div>
+<div class="card"><svg viewBox="0 0 32 32"><path d="M22 4l6 6M8 24l12-12 4 4-12 12H8zM6 28l2-4"/></svg><h3>Injectables</h3><p>Sterile vials and ampoules prepared under strict aseptic controls.</p></div>
+<div class="card"><svg viewBox="0 0 32 32"><path d="M10 12h12v14a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2zM12 12V6h8v6"/></svg><h3>Ointments and creams</h3><p>Topical formulations for dermatology and wound care.</p></div>
+<div class="card"><svg viewBox="0 0 32 32"><path d="M16 4c5 6 8 10 8 14a8 8 0 0 1-16 0c0-4 3-8 8-14z"/></svg><h3>Drops and sprays</h3><p>Eye, ear and nasal preparations in sealed, tamper-evident packs.</p></div>
+</div>
+<p class="note">Product list shown is a sample. Send us your full catalogue and I will list it here.</p>
+</div></section>
+
+<section id="quality" class="band"><div class="wrap two">
+<h2>Quality at every stage.</h2>
+<div>
+<p>From raw material testing to final release, every batch is recorded, checked and traceable. Our quality team follows Good Manufacturing Practice and prepares the documents importing countries ask for.</p>
+<p>We can supply a Certificate of Analysis with each batch, along with product dossiers and registration support on request.</p>
+</div>
+</div></section>
+
+<section id="export"><div class="wrap">
+<h2>Exporting to the world</h2>
+<p style="color:var(--mute);max-width:36em;margin:0">We handle packing, labelling, documentation and shipping, so you deal with one partner from order to arrival.</p>
+<ul class="regions"><li>Africa</li><li>Southeast Asia</li><li>Middle East</li><li>CIS countries</li><li>Latin America</li><li>South Asia</li></ul>
+<ol class="steps">
+<li><h3>Enquire</h3><p>Send us the products, quantities and destination country.</p></li>
+<li><h3>Quote and register</h3><p>We confirm pricing and share the dossier your regulator needs.</p></li>
+<li><h3>Manufacture</h3><p>Your order is produced, tested and packed to specification.</p></li>
+<li><h3>Ship</h3><p>We arrange export documents and dispatch by air or sea.</p></li>
+</ol>
+</div></section>
+
+<section id="contact" class="band"><div class="wrap two">
+<div>
+<h2>Send an enquiry</h2>
+<p style="color:var(--mute)">Tell us what you need. We reply within two business days.</p>
+<dl class="info" style="margin:0">
+<dt>Email</dt><dd>info@vivenlifescience.com</dd>
+<dt>Phone</dt><dd>+91 00000 00000</dd>
+<dt>Address</dt><dd>Your factory or office address, India</dd>
+</dl>
+</div>
+<form id="f">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Company and country<input name="c" required></label>
+<label>Email<input name="e" type="email" required autocomplete="email"></label>
+<label>Product interest<select name="p"><option>Tablets</option><option>Capsules</option><option>Syrups and suspensions</option><option>Injectables</option><option>Ointments and creams</option><option>Drops and sprays</option><option>Other</option></select></label>
+<label>Message<textarea name="m"></textarea></label>
+<button class="btn" type="submit">Send enquiry</button>
+</form>
+</div></section>
+
+<footer><div class="wrap">
+<a class="brand" href="#top" aria-label="Back to top"><svg aria-hidden="true"><use href="#logo"/></svg><span class="wm"><b>VIVEN</b><span>LIFESCIENCE</span></span></a>
+<span>© 2026 Viven Lifescience. All rights reserved.</span>
+</div></footer>
+
+<script>
+(function(){
+var g=document.getElementById('h'),s='';
+for(var i=0;i<14;i++){
+var y=20+i*25,p=Math.sin(i*0.65),x1=150+p*95,x2=150-p*95;
+s+='<line x1="'+x1.toFixed(1)+'" y1="'+y+'" x2="'+x2.toFixed(1)+'" y2="'+y+'"/>';
+s+='<circle class="a" cx="'+x1.toFixed(1)+'" cy="'+y+'" r="'+(8+p*3).toFixed(1)+'" style="--d:'+(-p*10).toFixed(1)+'px;animation-delay:'+(-i*0.3)+'s"/>';
+s+='<circle class="b" cx="'+x2.toFixed(1)+'" cy="'+y+'" r="'+(8-p*3).toFixed(1)+'" style="--d:'+(p*10).toFixed(1)+'px;animation-delay:'+(-i*0.3)+'s"/>';
+}
+g.innerHTML=s;
+document.getElementById('f').addEventListener('submit',function(ev){
+ev.preventDefault();var d=new FormData(ev.target);
+var body='Name: '+d.get('n')+'\nCompany and country: '+d.get('c')+'\nEmail: '+d.get('e')+'\nProduct: '+d.get('p')+'\n\n'+d.get('m');
+location.href='mailto:info@vivenlifescience.com?subject='+encodeURIComponent('Enquiry from '+d.get('c'))+'&body='+encodeURIComponent(body);
+});
+})();
+</script>
+</body>
+</html>
